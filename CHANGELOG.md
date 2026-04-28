@@ -233,6 +233,10 @@ Resilience pass. Nine community-and-internal PRs addressing real user-impacting 
   other `ESC O*` sequences pass through unchanged. Verified unchanged
   for iTerm2 → SSH → Screen (already emitted vt220 `ESC [1~` / `ESC [4~`).
 
+### Added
+
+- **SSH port forwarding for remote sessions** ([#792](https://github.com/asheshgoplani/agent-deck/issues/792)). Configure `-L`/`-R`/`-D` forwards per remote via `--forward` flag on `remote add` or the new `remote forward add/remove/list` subcommands. Forwards apply to all SSH connections (attach, command execution, session fetch).
+
 ## [1.7.72] - 2026-04-28
 
 Bundle of fixes and contributor PRs, hours after v1.7.71. Two external contributors merged this cycle: @tarekrached (twice), @oryaacov.
